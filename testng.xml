@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+        <listener class-name="utils.Listeners.TestListener"/>
+        <listener class-name="utils.Listeners.AnnotationTransformer"/>
+    </listeners>
+  <test name="UserTest">
+      <parameter name="browser" value="firefox"/>   
+    <classes>
+      <class name="tests.Users"/>
+    </classes>   
+  </test> <!-- Test -->
+    
+   <test name="GroupTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Group"/>
+    </classes>    
+  </test> <!-- Test -->
+  <test name="RolesTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Roles"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="CustomerCompanyTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Customer_Company"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="LocalizationTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Localization"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="CompanyTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Company"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="DomainTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Domain"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="LanguagesTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Languages"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="ModulesTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Modules"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="LookupsTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Lookups"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="CountriesTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Countries"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="ThemesTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Themes"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="MessageTemplateTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Message_Template"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="TruckTest">
+       <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Truck"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="MaterialTest">
+      <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.MaterialSearch"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="PackageTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Packages"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="DriverTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Driver"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="LoadingDurationTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.LoadingDuration"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="DistanceTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Distance"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="OrderSearchTest">
+   <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.OrderSearch"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="OrderMaterialSearchTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.OrderMaterialSearch"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="ReportDefinitionTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.ReportDefinition"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="PalletDefinitionTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.PalletDefinition"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="MaterialPackageDefinitionTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.MaterialPackage"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+ <test name="RegionTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Region"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+ <test name="UserTest2">
+      <parameter name="browser" value="chrome"/>
+    
+    <classes>
+      <class name="tests.Users"/>
+    </classes>   
+  </test> <!-- Test -->
+   <test name="GroupTest2">
+      <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Group"/>
+    </classes>    
+  </test> <!-- Test -->
+  <test name="RolesTest2">
+      <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Roles"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="CustomerCompanyTest2">
+      <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Customer_Company"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="LocalizationTest2">
+      <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Localization"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="CompanyTest2">
+      <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Company"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="DomainTest2">
+      <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Domain"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="LanguagesTest2">
+      <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Languages"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="ModulesTest2">
+      <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Modules"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="LookupsTest2">
+   <parameter name="browser" value="chrome"/>  
+    <classes>
+      <class name="tests.Lookups"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="CountriesTest2">
+       <parameter name="browser" value="chrome"/> 
+    <classes>
+      <class name="tests.Countries"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="ThemesTest2">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Themes"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="MessageTemplateTest2">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Message_Template"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="TruckTest2">
+       <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Truck"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="MaterialTest2">
+      <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.MaterialSearch"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="PackageTest2">
+     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Packages"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="DriverTest2">
+     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Driver"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="LoadingDurationTest2">
+     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.LoadingDuration"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="DistanceTest2">
+     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Distance"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="OrderSearchTest2">
+      <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.OrderSearch"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="OrderMaterialSearchTest2">
+     <parameter name="browser" value="chrome"/>
+  
+    <classes>
+      <class name="tests.OrderMaterialSearch"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="ReportDefinitionTest2">
+     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.ReportDefinition"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="PalletDefinitionTest2">
+     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.PalletDefinition"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="MaterialPackageDefinitionTest2">
+     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.MaterialPackage"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+ <test name="RegionTest2">
+     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Region"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+<test name="UserTest3">
+      <parameter name="browser" value="internet"/>   
+    <classes>
+      <class name="tests.Users"/>
+    </classes>   
+  </test> <!-- Test -->
+   <test name="GroupTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Group"/>
+    </classes>    
+  </test> <!-- Test -->
+  <test name="RolesTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Roles"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="CustomerCompanyTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Customer_Company"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="LocalizationTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Localization"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="CompanyTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Company"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="DomainTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Domain"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="LanguagesTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Languages"/>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="ModulesTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Modules"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="LookupsTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Lookups"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="CountriesTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Countries"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="ThemesTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Themes"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="MessageTemplateTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Message_Template"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="TruckTest3">
+       <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Truck"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="MaterialTest3">
+      <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.MaterialSearch"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="PackageTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Packages"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="DriverTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Driver"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="LoadingDurationTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.LoadingDuration"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="DistanceTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Distance"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="OrderSearchTest3">
+   <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.OrderSearch"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="OrderMaterialSearchTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.OrderMaterialSearch"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+ <test name="ReportDefinitionTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.ReportDefinition"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="PalletDefinitionTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.PalletDefinition"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="MaterialPackageDefinitionTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.MaterialPackage"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+ <test name="RegionTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Region"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->
