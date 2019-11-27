@@ -21,7 +21,6 @@ public class Region extends BaseTest {
             .LogoutPage();
         	Thread.sleep(2000);
  
-        	
     }
 	
 	@Test(priority = 1, description = "Invalid Add Region")
