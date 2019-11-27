@@ -23,6 +23,7 @@ public class LoginPage extends BasePage {
 	    By newcreateuser = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	    By settingsclick = By.xpath("//*[contains(text(), 'Settings')]");
 	    
+	    
 	    By company = By.id("Companies-90");
 	    By addCompany = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	    By CompanyName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div[1]/input");

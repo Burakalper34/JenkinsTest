@@ -20,7 +20,7 @@ public class PalletDefinition extends BaseTest {
         .loginToItelli("milkrunadmin", "1234")
         .EmptyAddPalletDefiniton()
         .LogoutPage();
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     
 }
 
