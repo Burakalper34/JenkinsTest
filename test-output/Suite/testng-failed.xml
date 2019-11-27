@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.Listeners.TestListener"/>
+    <listener class-name="utils.Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="UserTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Users">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="AddUser" invocation-numbers="0"/>
+          <include name="verifypageTitle"/>
+          <include name="InvalidAddUser" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="EmptyAddUser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.Users -->
+    </classes>
+  </test> <!-- UserTest(failed) -->
+  <test thread-count="5" name="GroupTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Group">
+        <methods>
+          <include name="EmptyAddGroup" invocation-numbers="0"/>
+          <include name="methodLevelSetup"/>
+          <include name="verifypageTitle"/>
+          <include name="AddGroup" invocation-numbers="0"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.Group -->
+    </classes>
+  </test> <!-- GroupTest(failed) -->
+  <test thread-count="5" name="RolesTest(failed)">
+    <classes>
+      <class name="tests.Roles">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="verifypageTitle"/>
+          <include name="AddRole"/>
+          <include name="teardown"/>
+          <include name="EmptyAddRole"/>
+        </methods>
+      </class> <!-- tests.Roles -->
+    </classes>
+  </test> <!-- RolesTest(failed) -->
+  <test thread-count="5" name="CustomerCompanyTest(failed)">
+    <classes>
+      <class name="tests.Customer_Company">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="AddCustomerCompany"/>
+          <include name="EmptyAddCustomerCompany"/>
+          <include name="verifypageTitle"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.Customer_Company -->
+    </classes>
+  </test> <!-- CustomerCompanyTest(failed) -->
+  <test thread-count="5" name="LocalizationTest(failed)">
+    <classes>
+      <class name="tests.Localization">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="AddLocalization"/>
+          <include name="verifypageTitle"/>
+          <include name="EmptyAddLocalization"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.Localization -->
+    </classes>
+  </test> <!-- LocalizationTest(failed) -->
+  <test thread-count="5" name="CompanyTest(failed)">
+    <classes>
+      <class name="tests.Company">
+        <methods>
+          <include name="InvalidAddCompany"/>
+          <include name="methodLevelSetup"/>
+          <include name="EmptyAddCompany"/>
+          <include name="AddCompany"/>
+          <include name="verifypageTitle"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.Company -->
+    </classes>
+  </test> <!-- CompanyTest(failed) -->
+  <test thread-count="5" name="DomainTest(failed)">
+    <classes>
+      <class name="tests.Domain">
+        <methods>
+          <include name="AddDomain"/>
+          <include name="methodLevelSetup"/>
+          <include name="EmptyAddCompany"/>
+          <include name="verifypageTitle"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.Domain -->
+    </classes>
+  </test> <!-- DomainTest(failed) -->
+  <test thread-count="5" name="LanguagesTest(failed)">
+    <classes>
+      <class name="tests.Languages">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="verifypageTitle"/>
+          <include name="AddLanguage"/>
+          <include name="teardown"/>
+          <include name="EmptyAddLanguage"/>
+        </methods>
+      </class> <!-- tests.Languages -->
+    </classes>
+  </test> <!-- LanguagesTest(failed) -->
+  <test thread-count="5" name="ModulesTest(failed)">
+    <classes>
+      <class name="tests.Modules">
+        <methods>
+          <include name="EmptyAddModules"/>
+          <include name="methodLevelSetup"/>
+          <include name="verifypageTitle"/>
+          <include name="AddModules"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.Modules -->
+    </classes>
+  </test> <!-- ModulesTest(failed) -->
+  <test thread-count="5" name="LookupsTest(failed)">
+    <classes>
+      <class name="tests.Lookups">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="AddLookup"/>
+          <include name="verifypageTitle"/>
+          <include name="EmptyAddLookup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.Lookups -->
+    </classes>
+  </test> <!-- LookupsTest(failed) -->
+  <test thread-count="5" name="CountriesTest(failed)">
+    <classes>
+      <class name="tests.Countries">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="AddCountry"/>
+          <include name="verifypageTitle"/>
+          <include name="teardown"/>
+          <include name="EmptyAddCountries"/>
+        </methods>
+      </class> <!-- tests.Countries -->
+    </classes>
+  </test> <!-- CountriesTest(failed) -->
+  <test thread-count="5" name="ThemesTest(failed)">
+    <classes>
+      <class name="tests.Themes">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="verifypageTitle"/>
+          <include name="teardown"/>
+          <include name="EmptyAddTheme"/>
+          <include name="AddTheme"/>
+        </methods>
+      </class> <!-- tests.Themes -->
+    </classes>
+  </test> <!-- ThemesTest(failed) -->
+  <test thread-count="5" name="MessageTemplateTest(failed)">
+    <classes>
+      <class name="tests.Message_Template">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="EmptyAddMessageTemplate"/>
+          <include name="verifypageTitle"/>
+          <include name="teardown"/>
+          <include name="AddMessageTemplate"/>
+        </methods>
+      </class> <!-- tests.Message_Template -->
+    </classes>
+  </test> <!-- MessageTemplateTest(failed) -->
+  <test thread-count="5" name="TruckTest(failed)">
+    <classes>
+      <class name="tests.Truck">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="verifypageTitle"/>
+          <include name="AddTruck"/>
+          <include name="teardown"/>
+          <include name="EmptyAddTruck"/>
+        </methods>
+      </class> <!-- tests.Truck -->
+    </classes>
+  </test> <!-- TruckTest(failed) -->
+  <test thread-count="5" name="MaterialTest(failed)">
+    <classes>
+      <class name="tests.MaterialSearch">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="verifypageTitle"/>
+          <include name="SearchMaterial"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.MaterialSearch -->
+    </classes>
+  </test> <!-- MaterialTest(failed) -->
+  <test thread-count="5" name="PackageTest(failed)">
+    <classes>
+      <class name="tests.Packages">
+        <methods>
+          <include name="AddPackage"/>
+          <include name="methodLevelSetup"/>
+          <include name="verifypageTitle"/>
+          <include name="teardown"/>
+          <include name="EmptyAddPackage"/>
+        </methods>
+      </class> <!-- tests.Packages -->
+    </classes>
+  </test> <!-- PackageTest(failed) -->
+  <test thread-count="5" name="DriverTest(failed)">
+    <classes>
+      <class name="tests.Driver">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="verifypageTitle"/>
+          <include name="AddDriver"/>
+          <include name="teardown"/>
+          <include name="EmptyAddDriver"/>
+        </methods>
+      </class> <!-- tests.Driver -->
+    </classes>
+  </test> <!-- DriverTest(failed) -->
+  <test thread-count="5" name="LoadingDurationTest(failed)">
+    <classes>
+      <class name="tests.LoadingDuration">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="EmptyAddGroup"/>
+          <include name="verifypageTitle"/>
+          <include name="AddLoadingDuration"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.LoadingDuration -->
+    </classes>
+  </test> <!-- LoadingDurationTest(failed) -->
+  <test thread-count="5" name="DistanceTest(failed)">
+    <classes>
+      <class name="tests.Distance">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="verifypageTitle"/>
+          <include name="AddDistance"/>
+          <include name="teardown"/>
+          <include name="EmptyAddDistance"/>
+        </methods>
+      </class> <!-- tests.Distance -->
+    </classes>
+  </test> <!-- DistanceTest(failed) -->
+  <test thread-count="5" name="OrderSearchTest(failed)">
+    <classes>
+      <class name="tests.OrderSearch">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="InvalidOrderSearch"/>
+          <include name="OrderSearch"/>
+          <include name="verifypageTitle"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.OrderSearch -->
+    </classes>
+  </test> <!-- OrderSearchTest(failed) -->
+  <test thread-count="5" name="OrderMaterialSearchTest(failed)">
+    <classes>
+      <class name="tests.OrderMaterialSearch">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="OrderMaterialSearch"/>
+          <include name="InvalidOrderMaterialSearch"/>
+          <include name="verifypageTitle"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.OrderMaterialSearch -->
+    </classes>
+  </test> <!-- OrderMaterialSearchTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
