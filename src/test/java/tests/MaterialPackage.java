@@ -48,8 +48,8 @@ public class MaterialPackage extends BaseTest {
             .goToItelli()
             .goToLoginPage()
             .loginToItelli("milkrunadmin", "1234")
-            .AddMaterial_Package()
-            .LogoutPage();
+            .AddMaterial_Package();
+           
         	Thread.sleep(3000);
         
     }

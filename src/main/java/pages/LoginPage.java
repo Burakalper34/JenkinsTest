@@ -673,6 +673,24 @@ public class LoginPage extends BasePage {
     }
     
     /*--------------------------------------------------------------------------------------------------*/
+    
+    public LoginPage EmptyAddMaterial() throws InterruptedException {
+    	click(definitions);
+    	Thread.sleep(2000);
+    	click(milkrun);
+    	Thread.sleep(3000);
+    	click(material);
+    	Thread.sleep(2000);    	
+    	click(addMaterial);
+    	Thread.sleep(2000);
+    	click(save);
+    	Thread.sleep(2000);
+    	click(cancel);
+    	Thread.sleep(1000);
+    	
+    	
+    	return this;
+    }
     public LoginPage InvalidAddMaterial() throws InterruptedException {
     	click(definitions);
     	Thread.sleep(2000);
@@ -691,6 +709,12 @@ public class LoginPage extends BasePage {
     	click(MaterialType);
     	Thread.sleep(1000);	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'Standart')]")))).click();
+    	Thread.sleep(1000);	
+    	click(save);
+    	Thread.sleep(1000);	
+    	click(cancel);
+    	Thread.sleep(1000);	
+    	
     	
     	return this;
     }
@@ -714,6 +738,14 @@ public class LoginPage extends BasePage {
     	click(MaterialType);
     	Thread.sleep(1000);	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'Standart')]")))).click();
+    	Thread.sleep(1000);	
+    	click(save);
+    	Thread.sleep(1000);
+    	click(MaterialDelete);
+    	Thread.sleep(1000);
+    	click(MaterialYes);
+    	Thread.sleep(1000);
+    	
     	
     	return this;
     }

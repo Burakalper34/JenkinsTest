@@ -157,6 +157,12 @@
       <class name="tests.Region"/>
     </classes>
   </test> <!-- Test -->
+ <test name="MaterialTest">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.Material"/>
+    </classes>
+  </test> <!-- Test -->
  
  <test name="UserTest2">
       <parameter name="browser" value="chrome"/>
@@ -312,6 +318,12 @@
     </classes>
   </test> <!-- Test -->
  
+ <test name="MaterialTest2">
+     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Material"/>
+    </classes>
+  </test> <!-- Test -->
 <test name="UserTest3">
       <parameter name="browser" value="internet"/>   
     <classes>
@@ -463,6 +475,12 @@
      <parameter name="browser" value="internet"/>
     <classes>
       <class name="tests.Region"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="MaterialTest3">
+     <parameter name="browser" value="internet"/>
+    <classes>
+      <class name="tests.Material"/>
     </classes>
   </test> <!-- Test -->
  
