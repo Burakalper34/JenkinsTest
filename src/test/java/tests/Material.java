@@ -50,8 +50,7 @@ public class Material extends BaseTest {
     .goToItelli()
     .goToLoginPage()
     .loginToItelli("milkrunadmin", "1234") 
-    .AddMaterial()
-    .LogoutPage();
+    .AddMaterial();
     Thread.sleep(3000);
     
 }
