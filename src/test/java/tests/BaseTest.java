@@ -23,7 +23,7 @@ public class BaseTest {
  
     @BeforeClass
     @Parameters("browser")
-    public void verifypageTitle(String browserName) {
+    public void verifypageTitle(String browserName) {    	
     	if (browserName.equalsIgnoreCase("firefox")) {
     		System.setProperty("webdriver.gecko.driver", "C:\\Uygulamalar\\geckodriver.exe");
             

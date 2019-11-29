@@ -463,6 +463,7 @@
     <classes>
       <class name="tests.PalletDefinition"/>
     </classes>
+    
   </test> <!-- Test -->
  <test name="MaterialPackageDefinitionTest3">
      <parameter name="browser" value="internet"/>
