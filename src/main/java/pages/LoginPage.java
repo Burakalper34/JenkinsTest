@@ -34,18 +34,20 @@ public class LoginPage extends BasePage {
 	    
 	    By groups = By.id("Groups-87");
 	    By addGroup = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
+	    By groupdelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[3]/td[2]/a[2]");
+	    By groupyes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
 	    By FirstName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By LastName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/div/div/div[1]/input");
 	    By NewUserName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By UserCellPhone = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[5]/div/div[2]/div/div/div/div/div/div[1]/input");
 	    By UserMail = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[5]/div/div[1]/div/div/div/div/div/div[1]/input");
-	    By UserDescription = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[7]/div/div/div/div/div/div[1]/input");
-	    By UserFax = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[8]/div/div/div/div/div/div[1]/input");
+	    By UserDescription = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[7]/div/div[2]/div/div/div/div/div/div[1]/input");
+	    By UserFax = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[7]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By UserPhone = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[9]/div/div/div/div/div[1]/div[1]/input");
-	    By UserExtension = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[10]/div/div/div/div/div[1]/div[1]/input");
+	    By UserExtension = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[6]/div/div[2]/div/div/div/div/div/div[1]/input");
 	    By backButton = By.id("back-button");
-	    By deleteUser = By.xpath("//*[@id=\"root\"]/div/div/div/main/div[2]/div/div/div[2]/table/tbody/tr[6]/td[6]/button[2]/span");
-	   
+	    By deleteUser = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[6]/td[2]/a[2]");
+	    
 	    By confirmButton = By.xpath("//*[contains(text(), 'Ok')]"); 
 	    By editUser = By.xpath("//*[@id=\"Edit-170\"]/span/i");
 	    By updateUser = By.xpath("//*[@id=\"root\"]/div/div/div/main/div[2]/div/div/div[1]/div[2]/div[6]/div[3]/div/button");
@@ -58,6 +60,9 @@ public class LoginPage extends BasePage {
 	    By newroles =By.xpath("/html/body/div[2]/div/div[3]/div/div[3]/div[1]/div/div/div/span");
 	    By addroles = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	    By rolename = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div[1]/input");
+	    By deleterole = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[5]/td[2]/a[2]");
+	    By roleyes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div/span");
+	    
 	    By permission = By.id("Permissions-110");
 	    By addPermission = By.xpath("//*[@id=\"root\"]/div/div/div/div/div/main/div/div/div/div/div/div/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	   
@@ -67,6 +72,8 @@ public class LoginPage extends BasePage {
 	    By localizationResourceName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By localizationLanguage = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div");
 	    By localizationSearchResourceN = By.xpath("//*[@id=\"grid-container\"]/div/div[5]/div[2]/table/tbody/tr[2]/td[3]/div/div[2]/div/div/div[1]/input");
+	    By localizationDelete = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[6]/div[2]/table/tbody/tr[9]/td[2]/a[2]");
+	    By localizationYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
 	    
 	    By milkrun = By.id("MilkRun-151");
 	    By tecedekor = By.xpath("//*[contains(text(), 'Tece Dekor')]");
@@ -85,7 +92,8 @@ public class LoginPage extends BasePage {
 	    By DimensionHeight = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By DimensionLenght = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/input");
 	    By DimensionCancel = By.xpath("//*[contains(text(), 'Cancel')]");
-	    By DimensionDelete = By.xpath("//*[@title=\"Delete\"]");
+	    By DimensionDelete = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[6]/div[2]/table/tbody/tr[9]/td[2]/a[2]");
+	    By DimensionYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
 	    By DimensionEdit = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[6]/div/table/tbody/tr[2]/td[5]/a[1]");
 	    By DimensionSearch = By.xpath("//*[@id=\"grid-container\"]/div/div[5]/div/table/tbody/tr[2]/td[1]/div/div[2]/div/div/div[1]/input");
 	    By DimensionSearchDate = By.xpath("//*[@id=\"grid-container\"]/div/div[5]/div/table/tbody/tr[2]/td[5]/div/div[2]/div/div/div/div[1]/input");
@@ -99,9 +107,13 @@ public class LoginPage extends BasePage {
 	    By TruckSearchDate = By.xpath("//*[@id=\"grid-container\"]/div/div[5]/div/table/tbody/tr[2]/td[5]/div/div[2]/div/div/div/div[1]/input");
 	    By addTruck = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	    By editTruck = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[6]/a[1]");
-	    
+	    By DeleteTruck = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[6]/td[2]/a[2]");
+	    By TruckYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div/span");	    
 	    By distance = By.id("DistanceDefinitions-163");
 	    By distanceSearchDistance = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[5]/div/table/tbody/tr[2]/td[3]/div/div[2]/div/div/div[1]/input");
+	    By DistanceDelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[2]/td[2]/a[2]");
+	    By DistanceYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div/span");
+	    
 	    By edit = By.xpath("/html/body/div[2]/div/div[1]/div/div[1]/div/div/div");
 	    By material_packmaterialSearchDateage = By.id("MaterialPackageDefinitions-56");
 	    By material_package =By.id("MaterialPackageDefinitions-165");
@@ -109,22 +121,25 @@ public class LoginPage extends BasePage {
 	    By EditMaterial_package = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[6]/a[1]");
 	    By MaterialPackageName = By.xpath("/html/body/div[3]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By MaterialPackageCode = By.xpath("/html/body/div[3]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
-	    By MaterialPackageWeight = By.xpath("\r\n" + 
-	    		"/html/body/div[3]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/input");
+	    By MaterialPackageWeight = By.xpath("/html/body/div[3]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/input");
 	    By Min_Qty = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By Max_Qty = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/input");
+	    By MaterialPackageDelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[8]/td[2]/a[2]");
+	    By MaterialPackageYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
+	    
 	    By addDistance = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	    By editDistance = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[5]/a[1]");
 	    By To_Company_Name = By.xpath("//*[@id=\"dx-6c650dac-ab1e-e1ae-2940-9288390b4a77\"]/div[1]/div/div[1]/div[2]/div[1]/div");
 	    By OrderDateChoose = By.xpath("//*[@id=\"dx-88e1778c-8a84-e5e8-b748-5ccb8d764b89\"]/div/div[1]/div/div/div/div[1]/div/div[1]/table/tbody/tr[4]/td[4]");
 	    By palletdefinition = By.id("PalletDefinitions-161");
 	    By addPalletDefinition = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[4]/div/div/div[3]/div[1]/div/div/div/i");
-	    By PalletDefinitionName= By.xpath("\r\n" + 
-	    		"/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
+	    By PalletDefinitionName= By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By PalletDefinitionWeight = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/div/div/div[1]/input");
 	    By PalletDefinitionCode = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By PalletDefinitionDescription = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/input");
 	    By PalletDefinitionDimension = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[1]/div/div/div/div");
+	    By PalletDefinitionDelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[4]/td[2]/a[2]");
+	    By PalletDefinitionYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
 	    
 	    By palletdefinitionEdit = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[7]/a[1]");
 	    By palletdefinitionS = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[5]/div/table/tbody/tr[2]/td[2]/div/div[2]/div/div/div[1]/input");
@@ -137,10 +152,13 @@ public class LoginPage extends BasePage {
 	    By packagesCode =By.xpath("/html/body/div[3]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By packagesWeight =By.xpath("/html/body/div[3]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/input");
 	    By packageSearchName = By.xpath("//*[@id=\"grid-container\"]/div/div[5]/div[2]/table/tbody/tr[2]/td[1]/div/div[2]/div/div/div[1]/input");
-	    
+	    By PackageDelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[6]/td[2]/a[2]");
+	    By PackageYes = By.xpath("/html/body/div[3]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
 	    
 	    By drivers = By.id("TruckContacts-75");
 	    By addDrivers = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
+	    By DriverDelete = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[6]/div[2]/table/tbody/tr[3]/td[2]/a[2]");
+	    By DriverYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
 	    
 	    By DriversCompanyName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div");
 	    
@@ -169,7 +187,9 @@ public class LoginPage extends BasePage {
 	    
 	    By loadingduration = By.id("LoadingDurations-78");
 	    By addLoadingDuration = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
-	   
+	    By LoadingDelete = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[6]/div[2]/table/tbody/tr[1]/td[2]/a[2]");
+	    By LoadingYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
+	    
 	    By themes = By.id("Themes-101");
 	    
 	    By addThemes = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
@@ -180,6 +200,8 @@ public class LoginPage extends BasePage {
 	    By domain = By.id("Domains-92");
 	    By addDomain =By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	    By domainUrl = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div[1]/input");	
+	    By domainDelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[4]/td[2]/a[2]");
+	    By domainYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div/span");
 	    
 	    By permissionname = By.id("PermissionNames-74");
 	    By addPermissionName = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
@@ -198,12 +220,17 @@ public class LoginPage extends BasePage {
 	    By LanguageCulture = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/div/div/div[1]/input");
 	    By LanguageFlag = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By LanguageSearchName = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/div[1]/input");
+	    By languageDelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[3]/td[2]/a[2]");
+	    By languageYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
 	    
 	    By customercompany = By.id("Companies-94");
-	    By addCustomerCompany = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
+	    By addCustomerCompany = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	    By customercompanyName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By customercompanyWebsite = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/input");
 	    By customercompanyLogo = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[1]/div/div/div/div/div/div[1]/input");
+	    By customercompanyType = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div");
+	    By customercompanydelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[5]/td[2]/a[2]\r\n");
+	    By customercompanyyes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div/span"); 
 	    By companyadress = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[1]/td[2]/a[3]");
 	    By addCustomerCompanyAdress = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[4]/div/div/div[3]/div[1]/div/div/div");
 	    
@@ -220,6 +247,8 @@ public class LoginPage extends BasePage {
 	   
 	    By regionrelations = By.id("RegionRelations");
 	    By addRegionRelations = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[4]/div/div/div[3]/div[1]/div/div/div/i");
+	    By deleteregion = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[5]/td[2]/a[2]\r\n");
+	    By regionyes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
 	    By lookupName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    
 	    By module = By.id("Modules-97");
@@ -232,7 +261,8 @@ public class LoginPage extends BasePage {
 	    By country = By.id("Countries-100");
 	    By addCountry = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	    By countryName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div[1]/input");
-	    
+	    By countryDelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[3]/td[2]/a[2]");
+	    By countryYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div/span");
 	    By systemsettings = By.id("SystemSettings");
 	    By addSystemSettings = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	    By systemsettingsName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
@@ -249,7 +279,8 @@ public class LoginPage extends BasePage {
 	    
 	    By contacts = By.id("Contacts-106");
 	    By addContacts = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div");
-	    
+	    By contactdelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[9]/td[2]/a[2]\r\n");
+	    By yes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
 	    By pendingOrders = By.id("PendingOrdersReport");
 	    By dx = By.xpath("//*[@id=\"form-demo\"]/div/div[6]/div[1]/div/div/div/span[1]");
 	    
@@ -257,6 +288,8 @@ public class LoginPage extends BasePage {
 	    By addReportMenu = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
 	    By ReportName =By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By ReportIndex = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
+	    By ReportDelete = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[6]/div[2]/table/tbody/tr[1]/td[2]/a[2]");
+	    By ReportYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
 	    
 	    By pendingorderreport =  By.id("PendingOrdersReport-62");
 	    By showresult = By.id("btnShowResults");
@@ -272,6 +305,28 @@ public class LoginPage extends BasePage {
 	    By reportDefinitionName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By reportDefinitionPath = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
 	    By reportmenuId = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div[1]/div/div[2]/div[2]/div/div");
+	    
+	    By packagepallet = By.id("PackagePalletDefinitions-177");
+	    By addPackagePallet = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div");
+	    By PackagePalletPackageName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div");
+	    By PackagePalletPalletName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div");
+	    By PackagePalletQuantity = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
+	    By PackagePalletCode = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/input");
+	    By PackagePalletDelete = By.xpath("//*[@id=\"grid-container\"]/div/div[6]/div[2]/table/tbody/tr[3]/td[2]/a[2]");
+	    By PackagePalletYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div/span");
+	    
+	    By deletereport = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[6]/div[2]/table/tbody/tr[2]/td[2]/a[2]");
+	    By reportyes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div/span");
+	    
+	   
+	    By addMaterial = By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i");
+	    By MaterialName = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input");
+	    By MaterialCode = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input");
+	    By MaterialWeight = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div[1]/input");
+	    By MaterialType = By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div");
+	    By MaterialDelete = By.xpath("//*[@id=\"grid-container\"]/div[1]/div[6]/div[2]/table/tbody/tr[9]/td[2]/a[2]");
+	    By MaterialYes = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div");
+	    
 	    public LoginPage(WebDriver driver) {
 	        super(driver);
 	    }
@@ -368,6 +423,11 @@ public class LoginPage extends BasePage {
     	Thread.sleep(1000);
     	click(save);
     	Thread.sleep(1000);
+    	click(groupdelete);
+    	Thread.sleep(1000);
+    	click(groupyes);
+    	Thread.sleep(1000);
+    	
     	return this;
     }
     
@@ -438,7 +498,10 @@ public class LoginPage extends BasePage {
     	Thread.sleep(1000);
     	click(save);
     	Thread.sleep(2000);
- 
+    	click(deleterole);
+    	Thread.sleep(1000);
+    	click(roleyes);
+    	Thread.sleep(1000);
     	return this;
     	
     }
@@ -522,7 +585,11 @@ public class LoginPage extends BasePage {
     	Thread.sleep(2000);
     	click(save);
     	Thread.sleep(2000);
- 
+    	click(DimensionDelete);
+    	Thread.sleep(2000);
+    	click(DimensionYes);
+    	Thread.sleep(2000);
+    	
     	return this;
     	
     }
@@ -606,8 +673,51 @@ public class LoginPage extends BasePage {
     }
     
     /*--------------------------------------------------------------------------------------------------*/
+    public LoginPage InvalidAddMaterial() throws InterruptedException {
+    	click(definitions);
+    	Thread.sleep(2000);
+    	click(milkrun);
+    	Thread.sleep(3000);
+    	click(material);
+    	Thread.sleep(2000);    	
+    	click(addMaterial);
+    	Thread.sleep(2000);
+    	writeText(MaterialName,"Çivi");
+    	Thread.sleep(1000);
+    	writeText(MaterialCode,"C-01");
+    	Thread.sleep(1000);
+    	writeText(MaterialWeight,"-5");    	
+    	Thread.sleep(1000);
+    	click(MaterialType);
+    	Thread.sleep(1000);	
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'Standart')]")))).click();
+    	
+    	return this;
+    }
     
-    
+   
+    public LoginPage AddMaterial() throws InterruptedException {
+    	click(definitions);
+    	Thread.sleep(2000);
+    	click(milkrun);
+    	Thread.sleep(3000);
+    	click(material);
+    	Thread.sleep(2000);    	
+    	click(addMaterial);
+    	Thread.sleep(2000);
+    	writeText(MaterialName,"Çekiç");
+    	Thread.sleep(1000);
+    	writeText(MaterialCode,"C-01");
+    	Thread.sleep(1000);
+    	writeText(MaterialWeight,"10");    	
+    	Thread.sleep(1000);
+    	click(MaterialType);
+    	Thread.sleep(1000);	
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'Standart')]")))).click();
+    	
+    	return this;
+    }
+   
     public LoginPage MaterialSearch() throws InterruptedException {
     	click(definitions);
     	Thread.sleep(2000);
@@ -772,9 +882,12 @@ public class LoginPage extends BasePage {
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div[1]/div/div[2]/div[2]/div/div")).click();
     	Thread.sleep(2000);    	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'Tır')]")))).click();   		
-    	Thread.sleep(2000);
-     	
+    	Thread.sleep(2000);    	
     	click(save);
+    	Thread.sleep(2000);
+    	click(DeleteTruck);
+    	Thread.sleep(2000);
+    	click(TruckYes);
     	Thread.sleep(2000);
     	
     	return this;
@@ -888,9 +1001,14 @@ public class LoginPage extends BasePage {
     	
     	driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[1]/input")).sendKeys("5");
     	Thread.sleep(1000);
+    	
     	click(save);
     	//driver.findElement(By.xpath("//div[@class='dx-texteditor-input-container']//*[@type='text' and @class='dx-texteditor-input']")).sendKeys("5");
     	Thread.sleep(2000);
+        click(DistanceDelete);
+        Thread.sleep(2000);
+        click(DistanceYes);
+        Thread.sleep(2000);
         
     	return this;    	
     }
@@ -930,6 +1048,84 @@ public class LoginPage extends BasePage {
     
     /*--------------------------------------------------------------------------------------------------*/
     
+    public LoginPage EmptyAddPackagePalletDefiniton() throws InterruptedException {
+    	click(definitions);
+    	Thread.sleep(2000);
+    	click(milkrun);
+    	Thread.sleep(2000);  	
+    	click(packagepallet);
+    	Thread.sleep(2000);
+    	click(addPackagePallet);
+    	Thread.sleep(2000);
+    	click(save);
+    	Thread.sleep(2000);
+    	click(cancel);
+    	Thread.sleep(2000);
+    	
+    	return this;    	
+    }
+    
+    public LoginPage InvalidAddPackagePalletDefiniton() throws InterruptedException {
+    	click(definitions);
+    	Thread.sleep(2000);
+    	click(milkrun);
+    	Thread.sleep(2000);  	
+    	click(packagepallet);
+    	Thread.sleep(2000);
+    	click(addPackagePallet);
+    	Thread.sleep(2000);
+    	click(PackagePalletPackageName);
+    	Thread.sleep(2000);   	
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'Çivi Paketi')]")))).click();
+    	Thread.sleep(2000);
+    	click(PackagePalletPalletName);
+    	Thread.sleep(2000);    	
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'Standart Palet')]")))).click();
+    	Thread.sleep(1000);    	
+    	writeText(PackagePalletQuantity,"-5");    	
+    	Thread.sleep(1000);
+    	writeText(PackagePalletCode,"CV-01");    	    	
+    	click(save); 	
+    	Thread.sleep(2000);
+    	click(cancel);
+    	Thread.sleep(2000);
+    	
+    	return this;
+    }
+    
+    public LoginPage AddPackagePalletDefiniton() throws InterruptedException {
+    	click(definitions);
+    	Thread.sleep(2000);
+    	click(milkrun);
+    	Thread.sleep(2000);  	
+    	click(packagepallet);
+    	Thread.sleep(2000);
+    	click(addPackagePallet);
+    	Thread.sleep(1000);
+    	click(PackagePalletPackageName);
+    	Thread.sleep(1000);
+    	
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'Çivi Paketi')]")))).click();
+    	Thread.sleep(1000);
+    	click(PackagePalletPalletName);
+    	Thread.sleep(1000);
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'Standart Palet')]")))).click();
+    	Thread.sleep(1000);    	
+    	writeText(PackagePalletQuantity,"15");    	
+    	Thread.sleep(1000);
+    	writeText(PackagePalletCode,"CV-01");    	    	
+    	Thread.sleep(1000);    	
+    	click(save); 	
+    	Thread.sleep(2000);
+    	click(PackagePalletDelete);
+    	Thread.sleep(2000);
+    	click(PackagePalletYes);
+    	Thread.sleep(2000);
+    	
+    	return this;
+    }
+    /*--------------------------------------------------------------------------------------------------*/
+      
     public LoginPage EmptyAddPalletDefiniton() throws InterruptedException {
     	click(definitions);
     	Thread.sleep(2000);
@@ -1005,7 +1201,11 @@ public class LoginPage extends BasePage {
     	Thread.sleep(1000);
     	click(PalletDefinitionDimension);
       	Thread.sleep(1000);
-          
+      	click(PalletDefinitionDelete);
+      	Thread.sleep(1000);
+      	click(PalletDefinitionYes);
+      	Thread.sleep(1000);
+      	  
     	WebDriverWait wait = new WebDriverWait(driver, 15);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'PAKET 30x30x30')]")))).click();
     	Thread.sleep(1000);
@@ -1136,11 +1336,12 @@ public class LoginPage extends BasePage {
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[4]/div/div[1]/div/div/div/div/div[1]/div/div[2]/div[2]/div/div")).click();
     	Thread.sleep(2000);    	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), 'Plastic Box')]")))).click();
-    	
-    	
     	click(save);
     	Thread.sleep(1000);
-    
+    	click(PackageDelete);
+    	Thread.sleep(1000);
+    	click(PackageYes);
+    	Thread.sleep(1000);
     	
     	return this;
     }
@@ -1376,7 +1577,10 @@ public class LoginPage extends BasePage {
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[contains(text(), '10')]")))).click();   	
     	click(save);
     	Thread.sleep(1000);
-    	
+    	click(LoadingDelete);
+    	Thread.sleep(1000);
+    	click(LoadingYes);
+    	Thread.sleep(1000);
     	
     	return this;
     }
@@ -1485,6 +1689,10 @@ public class LoginPage extends BasePage {
     	writeText(Max_Qty,"100");
      	Thread.sleep(1000);    	        
     	click(save);
+    	Thread.sleep(1000);
+    	click(MaterialPackageDelete);
+    	Thread.sleep(1000);
+    	click(MaterialPackageYes);
     	Thread.sleep(1000);
     	
     	return this;
@@ -1601,6 +1809,9 @@ public class LoginPage extends BasePage {
         Thread.sleep(2000); 
         click(save);
         Thread.sleep(2000);
+        click(DriverDelete);
+        Thread.sleep(2000);
+        click(DriverYes);
         
         return this;
     }
@@ -2059,10 +2270,16 @@ public class LoginPage extends BasePage {
     	Thread.sleep(1000);
     	click(save);
     	Thread.sleep(1000);
-    	
-    	return this;
-    }
-    /*--------------------------------------------------------------------------------------------------*/
+    	click(domainDelete);
+    	Thread.sleep(1000);
+    	click(domainYes);
+    	Thread.sleep(1000);
+
+     	return this;
+ 
+}
+/*-----------------------------------------------------------------------*/
+    
     public LoginPage EmptyAddPermissionName() throws InterruptedException{
     	click(settingsclick);
     	Thread.sleep(1000);
@@ -2241,6 +2458,9 @@ public class LoginPage extends BasePage {
     	Thread.sleep(1000);
     	click(save);
     	Thread.sleep(1000);
+    	click(languageDelete);
+    	Thread.sleep(1000);
+    	click(languageYes);
     	
     	return this;
     }
@@ -2371,6 +2591,10 @@ public class LoginPage extends BasePage {
     	writeText(regionDescription,"Bölge");
     	Thread.sleep(1000);  	
     	click(save);
+    	Thread.sleep(1000);
+    	click(deleteregion);
+    	Thread.sleep(1000);
+    	click(regionyes);
     	Thread.sleep(1000);
     	
     	return this;
@@ -2518,7 +2742,9 @@ public class LoginPage extends BasePage {
     	Thread.sleep(1000);	
     	click(save);
     	Thread.sleep(1000);
-    	
+    	click(customercompanydelete);
+    	Thread.sleep(1000);
+    	click(customercompanyyes);
     	return this;
     }
     /*--------------------------------------------------------------------------------------------------*/
@@ -2576,8 +2802,7 @@ public class LoginPage extends BasePage {
     	
     	click(save);
     	Thread.sleep(1000);
-    	click(cancel);
-    	Thread.sleep(1000);
+    	
     	
     	return this;
     }
@@ -2646,9 +2871,14 @@ public class LoginPage extends BasePage {
     	writeText(localizationResourceValue,"User-contact");
     	Thread.sleep(2000);
     	writeText(localizationResourceName,"User-contact");
-    	Thread.sleep(1000);
-    	
+    	Thread.sleep(1000);	
     	click(save);
+    	Thread.sleep(1000);
+    	driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div[1]/div[11]/div[2]/div[8]")).click();
+    	Thread.sleep(1000);
+    	click(localizationDelete);
+    	Thread.sleep(1000);
+    	click(localizationYes);
     	Thread.sleep(1000);
     	
     	return this;
@@ -2781,7 +3011,11 @@ public class LoginPage extends BasePage {
     	Thread.sleep(1000);
     	writeText(countryName,"Ukraine");
     	click(save);
-    	Thread.sleep(2000);
+    	Thread.sleep(1000);
+    	click(countryDelete);
+    	Thread.sleep(1000);
+    	click(countryYes);
+    	Thread.sleep(1000);
     	
     	return this;
     }
@@ -2935,10 +3169,26 @@ public class LoginPage extends BasePage {
     	writeText(UserMail,"http:/burakalper45@test.com");
     		Thread.sleep(1000); 	
 		click(save);
-    	
-    	
+		Thread.sleep(1000); 
+		click(contactdelete);
+		Thread.sleep(1000); 
+		click(yes);
+		Thread.sleep(1000); 
+		
 		return this;
     }
+    
+    public LoginPage DeleteContact() throws InterruptedException{
+    	click(definitions);
+    	Thread.sleep(1000);
+    	click(definitionsportal);
+    	Thread.sleep(2000);
+    	click(contacts);
+    	Thread.sleep(2000);
+    
+    	return this;
+    }
+    
     
     /*--------------------------------------------------------------------------------------------------*/
   
@@ -2967,7 +3217,7 @@ public class LoginPage extends BasePage {
     	click(definitionsportal);    	
     	Thread.sleep(2000);
     	click(users);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(newcreateuser);
     	Thread.sleep(2000);   	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input"))));    	
@@ -3147,7 +3397,7 @@ public class LoginPage extends BasePage {
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[4]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[4]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div")).click();
     	Thread.sleep(2000);
-    	driver.findElement(By.xpath("//div[contains(text(), 'Enka')]")).click();
+    	driver.findElement(By.xpath("//div[contains(text(), 'ABC Lojistik')]")).click();
     	Thread.sleep(2000);
     	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[4]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
@@ -3155,15 +3405,26 @@ public class LoginPage extends BasePage {
     	Thread.sleep(2000);
     	driver.findElement(By.xpath("//div[contains(text(), 'Türkçe')]")).click();
     	Thread.sleep(2000);
-    	  	
-    	//writeText(UserCellPhone,"5555554545");
+    	writeText(UserCellPhone,"905555554545");
     	Thread.sleep(2000);
+    	writeText(UserExtension,"123");
+    	Thread.sleep(2000); 
+    	writeText(UserDescription,"information");
+    	Thread.sleep(2000); 
+    	writeText(UserFax,"909998887766");
+    	Thread.sleep(2000); 
+    	    	    	
     	writeText(UserMail,"burakalper45@test.com");
-    		Thread.sleep(2000); 	
+    		Thread.sleep(2000);
+    		
 		click(save);
+		Thread.sleep(3000); 	
+		click(deleteUser);
 		Thread.sleep(2000); 	
-			
-    	
+		
+		click(yes);
+		Thread.sleep(2000); 	
+		
 		return this;
     }
     
@@ -3321,7 +3582,7 @@ public LoginPage AddReportDefinition() throws InterruptedException {
     	Thread.sleep(2000);
     	click(save);
     	Thread.sleep(2000);     
-    	click(cancel);
+    	click(deletereport);
     	
     	return this;
     }
@@ -3380,10 +3641,14 @@ public LoginPage AddReportDefinition() throws InterruptedException {
     	writeText(ReportName,"Report");
     	Thread.sleep(1000);
     	writeText(ReportIndex,"1");
-    	Thread.sleep(1000);
-        	
+    	Thread.sleep(1000);       	
     	click(save);
     	Thread.sleep(1000);
+    	click(ReportDelete);
+    	Thread.sleep(1000);
+    	click(ReportYes);
+    	Thread.sleep(1000);
+    	
     	
     	return this;
     }

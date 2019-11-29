@@ -48,8 +48,8 @@ public class ReportDefinition extends BaseTest {
             .goToItelli()
             .goToLoginPage()
             .loginToItelli("milkrunadmin", "1234")
-            .AddReportDefinition()
-            .LogoutPage();
+            .AddReportDefinition();
+            
         	Thread.sleep(2000);
         
     }
