@@ -90,7 +90,7 @@
       <class name="tests.Truck"/>
     </classes>
   </test> <!-- Test -->
-  <test name="MaterialTest">
+  <test name="MaterialSearchTest">
       <parameter name="browser" value="firefox"/>
     <classes>
       <class name="tests.MaterialSearch"/>
@@ -249,7 +249,7 @@
       <class name="tests.Truck"/>
     </classes>
   </test> <!-- Test -->
-  <test name="MaterialTest2">
+  <test name="MaterialSearchTest2">
       <parameter name="browser" value="chrome"/>
     <classes>
       <class name="tests.MaterialSearch"/>
@@ -304,6 +304,7 @@
       <class name="tests.PalletDefinition"/>
     </classes>
   </test> <!-- Test -->
+ 
  <test name="MaterialPackageDefinitionTest2">
      <parameter name="browser" value="chrome"/>
     <classes>
@@ -324,6 +325,7 @@
       <class name="tests.Material"/>
     </classes>
   </test> <!-- Test -->
+  
 <test name="UserTest3">
       <parameter name="browser" value="internet"/>   
     <classes>
@@ -408,7 +410,7 @@
       <class name="tests.Truck"/>
     </classes>
   </test> <!-- Test -->
-  <test name="MaterialTest3">
+  <test name="MaterialSearchTest3">
       <parameter name="browser" value="internet"/>
     <classes>
       <class name="tests.MaterialSearch"/>
@@ -444,6 +446,7 @@
       <class name="tests.OrderSearch"/>
     </classes>
   </test> <!-- Test -->
+
  <test name="OrderMaterialSearchTest3">
      <parameter name="browser" value="internet"/>
     <classes>
@@ -458,6 +461,7 @@
       <class name="tests.ReportDefinition"/>
     </classes>
   </test> <!-- Test -->
+
   <test name="PalletDefinitionTest3">
      <parameter name="browser" value="internet"/>
     <classes>
@@ -465,6 +469,7 @@
     </classes>
     
   </test> <!-- Test -->
+
  <test name="MaterialPackageDefinitionTest3">
      <parameter name="browser" value="internet"/>
     <classes>
@@ -478,6 +483,7 @@
       <class name="tests.Region"/>
     </classes>
   </test> <!-- Test -->
+
  <test name="MaterialTest3">
      <parameter name="browser" value="internet"/>
     <classes>
