@@ -338,7 +338,8 @@ public class LoginPage extends BasePage {
      *
      * @throws InterruptedException */
     public LoginPage loginToItelli(String username, String password) throws InterruptedException {
-        writeText(userNameId, username);
+    	wait.until(ExpectedConditions.elementToBeClickable(By.id("userName")));
+    	writeText(userNameId, username);
         Thread.sleep(2000);
         
         writeText(passwordId, password);
@@ -3238,7 +3239,7 @@ public class LoginPage extends BasePage {
     	click(save);
     	Thread.sleep(2000);
     	click(cancel);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	
     	return this;
     }
@@ -3250,6 +3251,7 @@ public class LoginPage extends BasePage {
     	Thread.sleep(2000);
     	click(users);
     	Thread.sleep(3000);
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i"))));
     	click(newcreateuser);
     	Thread.sleep(2000);   	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input"))));    	
@@ -3282,7 +3284,7 @@ public class LoginPage extends BasePage {
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[4]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[4]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div")).click();
     	Thread.sleep(2000);
-    	driver.findElement(By.xpath("//div[contains(text(), 'Enka')]")).click();
+    	driver.findElement(By.xpath("//div[contains(text(), 'ABC Lojistik')]")).click();
     	Thread.sleep(2000);
     	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[4]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
@@ -3290,6 +3292,14 @@ public class LoginPage extends BasePage {
     	Thread.sleep(2000);
     	driver.findElement(By.xpath("//div[contains(text(), 'Türkçe')]")).click();
     	Thread.sleep(2000);
+    	writeText(UserCellPhone,"905555554545");
+    	Thread.sleep(2000);
+    	writeText(UserExtension,"123");
+    	Thread.sleep(2000); 
+    	writeText(UserDescription,"information");
+    	Thread.sleep(2000); 
+    	writeText(UserFax,"909998887766");
+    	Thread.sleep(2000); 
     	  	
     	//writeText(UserCellPhone,"5555554545");
     	Thread.sleep(2000);
@@ -3399,6 +3409,8 @@ public class LoginPage extends BasePage {
     	click(definitionsportal);    	
     	Thread.sleep(2000);
     	click(users);
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i"))));
+    	
     	Thread.sleep(3000);
     	click(newcreateuser);
     	Thread.sleep(2000);   	
