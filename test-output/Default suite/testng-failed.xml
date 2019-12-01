@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Group">
+      <class name="tests.Users">
         <methods>
-          <include name="EmptyAddGroup"/>
           <include name="methodLevelSetup"/>
-          <include name="InvalidAddGroup"/>
+          <include name="AddUser"/>
           <include name="verifypageTitle"/>
-          <include name="AddGroup"/>
+          <include name="InvalidAddUser"/>
           <include name="teardown"/>
+          <include name="EmptyAddUser"/>
         </methods>
-      </class> <!-- tests.Group -->
+      </class> <!-- tests.Users -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
