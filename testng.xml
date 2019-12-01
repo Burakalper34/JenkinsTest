@@ -8,7 +8,7 @@
   <test name="UserTest">
       <parameter name="browser" value="firefox"/>   
     <classes>
-      <class name="tests.Users"/>
+      <class name="tests.User"/>
     </classes>   
   </test> <!-- Test -->
     
@@ -168,7 +168,7 @@
       <parameter name="browser" value="chrome"/>
     
     <classes>
-      <class name="tests.Users"/>
+      <class name="tests.User"/>
     </classes>   
   </test> <!-- Test -->
    <test name="GroupTest2">
@@ -329,7 +329,7 @@
 <test name="UserTest3">
       <parameter name="browser" value="internet"/>   
     <classes>
-      <class name="tests.Users"/>
+      <class name="tests.User"/>
     </classes>   
   </test> <!-- Test -->
    <test name="GroupTest3">
