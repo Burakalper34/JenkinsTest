@@ -35,6 +35,7 @@ public class Truck extends BaseTest {
             .InvalidAddTruck()
             .LogoutPage();
         	Thread.sleep(2000);
+        	
     }
 
 	@Test(priority = 2, description = "Add Truck")

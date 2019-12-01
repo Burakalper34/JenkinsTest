@@ -377,11 +377,11 @@ public class LoginPage extends BasePage {
     /*--------------------------------------------------------------------------------------------------*/
     public LoginPage EmptyAddGroup() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(groups);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addGroup);
     	Thread.sleep(2000);
     	click(save);
@@ -394,15 +394,15 @@ public class LoginPage extends BasePage {
     
     public LoginPage InvalidAddGroup() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(groups);
     	Thread.sleep(2000);
     	click(addGroup);
-    	Thread.sleep(1000);
+    	Thread.sleep(3000);
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div[1]/input")).sendKeys("-9");
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(save);
     	Thread.sleep(1000);
     	click(cancel);
@@ -413,17 +413,17 @@ public class LoginPage extends BasePage {
     
     public LoginPage AddGroup() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(groups);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addGroup);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div[1]/input")).sendKeys("itelli");
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(save);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(groupdelete);
     	Thread.sleep(1000);
     	click(groupyes);
@@ -451,15 +451,15 @@ public class LoginPage extends BasePage {
     
     public LoginPage EmptyAddRoles() throws InterruptedException {
     	click(definitions);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(roles);
     	Thread.sleep(3000);
     	click(addroles);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(save);
-    	Thread.sleep(1000);  
+    	Thread.sleep(2000);  
     	click(cancel);
     	Thread.sleep(1000);     
     	return this;
@@ -468,15 +468,15 @@ public class LoginPage extends BasePage {
     
     public LoginPage InvalidAddRoles() throws InterruptedException {
     	click(definitions);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(2000);     
+    	Thread.sleep(3000);     
     	click(roles);
     	Thread.sleep(2000);
     	click(addroles);
     	Thread.sleep(2000);
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div[1]/input")).sendKeys("itelligence Company Ataşehir Nidakule Güney xxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(save);
     	Thread.sleep(2000);
     	click(cancel);
@@ -488,15 +488,15 @@ public class LoginPage extends BasePage {
  
     public LoginPage AddRoles() throws InterruptedException {
     	click(definitions);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(2000);     
+    	Thread.sleep(3000);     
     	click(roles);
     	Thread.sleep(2000);
     	click(addroles);
     	Thread.sleep(2000);
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div[1]/input")).sendKeys("itelli");
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(save);
     	Thread.sleep(2000);
     	click(deleterole);
@@ -525,13 +525,13 @@ public class LoginPage extends BasePage {
     
     public LoginPage EmptyAddDimension() throws InterruptedException {
     	click(definitions);
-    	Thread.sleep(1000);
+    	Thread.sleep(3000);
     	click(milkrun);
-    	Thread.sleep(1000);    	
+    	Thread.sleep(3000);    	
     	click(dimension);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addDimension);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(save);
     	Thread.sleep(2000);
     	click(DimensionCancel);
@@ -543,19 +543,19 @@ public class LoginPage extends BasePage {
     
     public LoginPage InvalidAddDimension() throws InterruptedException {
     	click(definitions);
-    	Thread.sleep(1000);
+    	Thread.sleep(3000);
     	click(milkrun);
-    	Thread.sleep(1000);    	
+    	Thread.sleep(3000);    	
     	click(dimension);
     	Thread.sleep(2000);
     	click(addDimension);
     	Thread.sleep(1000);
     	writeText(DimensionName,"İtelli");
-    	Thread.sleep(1000);    	
+    	Thread.sleep(2000);    	
     	writeText(DimensionWidth,"-3");
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	writeText(DimensionHeight,"-3");
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	writeText(DimensionLenght,"-5");
     	Thread.sleep(2000);
     	click(save);
@@ -608,11 +608,11 @@ public class LoginPage extends BasePage {
     
     public LoginPage DimensionSearch() throws InterruptedException {
     	click(definitions);
-    	Thread.sleep(1000);
-    	click(milkrun);
-    	Thread.sleep(1000);    	
-    	click(dimension);
     	Thread.sleep(2000);
+    	click(milkrun);
+    	Thread.sleep(2000);    	
+    	click(dimension);
+    	Thread.sleep(3000);
     	writeText(DimensionSearch,"İtelli");
     	Thread.sleep(2000);
     	click(dimension);
@@ -677,11 +677,11 @@ public class LoginPage extends BasePage {
     
     public LoginPage EmptyAddMaterial() throws InterruptedException {
     	click(definitions);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(milkrun);
     	Thread.sleep(3000);
     	click(material);
-    	Thread.sleep(2000);    	
+    	Thread.sleep(3000);    	
     	click(addMaterial);
     	Thread.sleep(2000);
     	click(save);
@@ -1551,11 +1551,11 @@ public class LoginPage extends BasePage {
     public LoginPage EmptyAddLoadingDuration() throws InterruptedException {
     	Thread.sleep(2000);
     	click(definitions);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(milkrun);
-    	Thread.sleep(2000);    	
+    	Thread.sleep(3000);    	
     	click(loadingduration);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addLoadingDuration);
     	Thread.sleep(2000);
     	click(save);
@@ -1658,11 +1658,11 @@ public class LoginPage extends BasePage {
     	click(definitions);
     	Thread.sleep(2000);
     	click(milkrun);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(material_package);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(AddMaterial_package);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(save);
     	Thread.sleep(1000);
     	click(cancel);
@@ -1780,15 +1780,15 @@ public class LoginPage extends BasePage {
     /*--------------------------------------------------------------------------------------------------*/
     public LoginPage EmptyAddDrivers() throws InterruptedException {
     	click(definitions);    	
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(milkrun);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(drivers);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
         click(addDrivers);
         Thread.sleep(2000);
         click(save);
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         click(cancel);
         Thread.sleep(1000);
         
@@ -2258,13 +2258,13 @@ public class LoginPage extends BasePage {
     	WebDriverWait wait = new WebDriverWait(driver, 15);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a/i"))));
     	driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a")).click();
-    	Thread.sleep(1000);
+    	Thread.sleep(3000);
     	click(domain);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addDomain);
-    	Thread.sleep(1000);
+    	Thread.sleep(3000);
     	click(save);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(cancel);
     	Thread.sleep(1000);
     	
@@ -2437,13 +2437,13 @@ public class LoginPage extends BasePage {
     	WebDriverWait wait = new WebDriverWait(driver, 15);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a/i"))));
     	driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a")).click();
-    	Thread.sleep(1000);
-    	click(languages);
     	Thread.sleep(2000);
+    	click(languages);
+    	Thread.sleep(3000);
     	click(addLanguage);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(save);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(cancel);
     	Thread.sleep(1000);
     	
@@ -2710,11 +2710,11 @@ public class LoginPage extends BasePage {
     
     public LoginPage EmptyAddCustomerCompany() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(1000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(1000);     
+    	Thread.sleep(3000);     
     	click(customercompany);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addCustomerCompany);
     	Thread.sleep(2000);
     	click(save);
@@ -2727,11 +2727,11 @@ public class LoginPage extends BasePage {
     
     public LoginPage InvalidAddCustomerCompany() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(1000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(1000);  	
+    	Thread.sleep(3000);  	
     	click(customercompany);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addCustomerCompany);
     	Thread.sleep(2000);
     	writeText(customercompanyName,"itelli ");
@@ -2843,15 +2843,15 @@ public class LoginPage extends BasePage {
     /*--------------------------------------------------------------------------------------------------*/
     
     public LoginPage EmptyAddLocalization() throws InterruptedException{
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	WebDriverWait wait = new WebDriverWait(driver, 15);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a/i"))));
     	driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a")).click();
     	Thread.sleep(2000);
     	click(localization);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addLocalization);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(save);
     	Thread.sleep(2000);
     	click(cancel);
@@ -2996,15 +2996,15 @@ public class LoginPage extends BasePage {
     /*--------------------------------------------------------------------------------------------------*/
 
     public LoginPage EmptyAddCountry() throws InterruptedException{
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	WebDriverWait wait = new WebDriverWait(driver, 15);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a/i"))));
     	driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a")).click();
     	Thread.sleep(2000);
     	click(country);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addCountry);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(save);
     	Thread.sleep(2000);
     	click(cancel);
@@ -3020,9 +3020,9 @@ public class LoginPage extends BasePage {
     	driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a")).click();
     	Thread.sleep(2000);
     	click(country);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addCountry);
-    	Thread.sleep(1000);
+    	Thread.sleep(3000);
     	writeText(countryName,"-9");
     	click(save);
     	Thread.sleep(2000);
@@ -3041,8 +3041,10 @@ public class LoginPage extends BasePage {
     	click(country);
     	Thread.sleep(2000);
     	click(addCountry);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	writeText(countryName,"Ukraine");
+    	Thread.sleep(2000);
+    	
     	click(save);
     	Thread.sleep(1000);
     	click(countryDelete);
@@ -3089,13 +3091,13 @@ public class LoginPage extends BasePage {
     
     public LoginPage EmptyAddContacts() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(contacts);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addContacts);
-    	Thread.sleep(1000);
+    	Thread.sleep(3000);
     	click(save);
     	Thread.sleep(1000);
     	click(cancel);
@@ -3106,30 +3108,30 @@ public class LoginPage extends BasePage {
     
     public LoginPage InvalidAddContact() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(contacts);
     	Thread.sleep(2000);
     	click(addContacts);
-    	Thread.sleep(2000);   	
+    	Thread.sleep(3000);   	
     	writeText(FirstName,RandomFirstName());
-    	Thread.sleep(1000);        
+    	Thread.sleep(2000);        
     	writeText(LastName,RandomLastName());
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	writeText(NewUserName,getSaltString());
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div")).click();
-    	Thread.sleep(1000);    	
+    	Thread.sleep(2000);    	
     	driver.findElement(By.xpath("//div[contains(text(), 'Driver')]")).click();
     	
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div")).click();
     	Thread.sleep(2000);
     	driver.findElement(By.xpath("//div[contains(text(), 'Active')]")).click();
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div")).click();
@@ -3159,30 +3161,30 @@ public class LoginPage extends BasePage {
     
     public LoginPage AddContact() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(1000);
+    	Thread.sleep(3000);
     	click(definitionsportal);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(contacts);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addContacts);
     	Thread.sleep(2000);   	
     	writeText(FirstName,RandomFirstName());
-    	Thread.sleep(1000);        
+    	Thread.sleep(2000);        
     	writeText(LastName,RandomLastName());
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	writeText(NewUserName,getSaltString());
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div")).click();
-    	Thread.sleep(1000);    	
+    	Thread.sleep(2000);    	
     	driver.findElement(By.xpath("//div[contains(text(), 'Driver')]")).click();
     	
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div")).click();
     	Thread.sleep(2000);
     	driver.findElement(By.xpath("//div[contains(text(), 'Active')]")).click();
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div")).click();
@@ -3202,9 +3204,9 @@ public class LoginPage extends BasePage {
     	writeText(UserMail,"http:/burakalper45@test.com");
     		Thread.sleep(1000); 	
 		click(save);
-		Thread.sleep(1000); 
+		Thread.sleep(2000); 
 		click(contactdelete);
-		Thread.sleep(1000); 
+		Thread.sleep(2000); 
 		click(yes);
 		Thread.sleep(1000); 
 		
@@ -3227,15 +3229,15 @@ public class LoginPage extends BasePage {
   
     public LoginPage EmptyAddUser() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(2000);
-    	click(definitionsportal);
-    	Thread.sleep(2000);
-    	click(users);
     	Thread.sleep(3000);
+    	click(definitionsportal);
+    	Thread.sleep(3000);
+    	click(users);
+    	Thread.sleep(4000);
     	click(newcreateuser);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input"))));    	
     	
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(save);
     	Thread.sleep(2000);
     	click(cancel);
@@ -3246,14 +3248,14 @@ public class LoginPage extends BasePage {
     
     public LoginPage InvalidAddUser() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(2000);
-    	click(definitionsportal);    	
-    	Thread.sleep(2000);
-    	click(users);
     	Thread.sleep(3000);
+    	click(definitionsportal);    	
+    	Thread.sleep(3000);
+    	click(users);
+    	Thread.sleep(4000);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i"))));
     	click(newcreateuser);
-    	Thread.sleep(2000);   	
+    	Thread.sleep(3000);   	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input"))));    	
     	writeText(FirstName,RandomFirstName());
     	Thread.sleep(2000);
@@ -3405,19 +3407,21 @@ public class LoginPage extends BasePage {
     }
     public LoginPage CreateUser() throws InterruptedException{
     	click(definitions);
-    	Thread.sleep(2000);
-    	click(definitionsportal);    	
-    	Thread.sleep(2000);
-    	click(users);
-    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i"))));
-    	
     	Thread.sleep(3000);
+    	click(definitionsportal);    	
+    	Thread.sleep(3000);
+    	click(users);
+    	Thread.sleep(4000);
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div/div[4]/div/div/div[3]/div[1]/div/div/div/i"))));
     	click(newcreateuser);
-    	Thread.sleep(2000);   	
+    	Thread.sleep(3000);   	
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div/div/div/div[1]/input"))));    	
     	writeText(FirstName,RandomFirstName());
-    	Thread.sleep(1000);        
+    	Thread.sleep(2000);
+    	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/div/div/div[1]/input"))));    	
+    	
     	writeText(LastName,RandomLastName());
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	writeText(NewUserName,getSaltString());
     	Thread.sleep(2000);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
@@ -3430,7 +3434,7 @@ public class LoginPage extends BasePage {
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div")).click();
     	Thread.sleep(2000);
     	driver.findElement(By.xpath("//div[contains(text(), 'Active')]")).click();
-    	Thread.sleep(2000);
+    	Thread.sleep(1000);
     	
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div"))));
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[3]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div")).click();
@@ -3457,11 +3461,12 @@ public class LoginPage extends BasePage {
     	Thread.sleep(2000); 
     	writeText(UserFax,"909998887766");
     	Thread.sleep(2000); 
-    	    	    	
+    	  	
+    	//writeText(UserCellPhone,"5555554545");
+    	Thread.sleep(2000);
     	writeText(UserMail,"burakalper45@test.com");
-    		Thread.sleep(2000);
-    		
-		click(save);
+    	Thread.sleep(2000);
+    	click(save);    	
 		Thread.sleep(3000); 	
 		click(deleteUser);
 		Thread.sleep(2000); 	
@@ -3505,15 +3510,15 @@ public String RandomLastName() throws InterruptedException{
 /*--------------------------------------------------------------------------------------------------*/
   
     public LoginPage EmptyAddCompany() throws InterruptedException {
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	WebDriverWait wait = new WebDriverWait(driver, 15);
     	wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a/i"))));
     	driver.findElement(By.xpath("//*[@id=\"Settings-84\"]/a")).click();
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(company);
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     	click(addCompany);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     	click(save);
     	Thread.sleep(1000);
     	click(cancel);

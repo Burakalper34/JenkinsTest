@@ -21,7 +21,6 @@ public class User extends BaseTest{
             .LogoutPage();
         	Thread.sleep(3000); 
         	
-        	
     }
 
 	@Test(priority = 1, description = "Invalid Add User")
