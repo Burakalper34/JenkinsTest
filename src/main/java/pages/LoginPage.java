@@ -3472,7 +3472,7 @@ public class LoginPage extends BasePage {
 		Thread.sleep(2000); 	
 		
 		click(yes);
-		Thread.sleep(2000); 	
+		Thread.sleep(3000); 	
 		
 		return this;
     }
