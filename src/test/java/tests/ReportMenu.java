@@ -22,8 +22,23 @@ public class ReportMenu extends BaseTest {
         	Thread.sleep(2000);
         
     }
+	@Test(priority = 1, description = "Add ReportMenu")
+    public void AddReportMenu(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add ReportMenu");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddReportMenu()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
 
-	@Test(priority = 1, description = "Add Invalid ReportMenu")
+
+
+	@Test(priority = 2, description = "Add Invalid ReportMenu")
     public void InvalidAddReportMenu(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid ReportMenu");
@@ -35,19 +50,6 @@ public class ReportMenu extends BaseTest {
             .InvalidAddReportMenu()
             .LogoutPage();
         
-        	Thread.sleep(2000);
-    }
-
-	@Test(priority = 2, description = "Add ReportMenu")
-    public void AddReportMenu(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add ReportMenu");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddReportMenu();
         	Thread.sleep(2000);
     }
 

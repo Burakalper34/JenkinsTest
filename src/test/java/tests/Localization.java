@@ -22,8 +22,23 @@ public class Localization extends BaseTest{
         	Thread.sleep(3000);
         
     }
+	
+	@Test(priority = 1, description = "Add Localization")
+    public void AddLocalization(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Localization");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddLocalization()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
 
-	@Test(priority = 1, description = "Add Invalid InLocalization")
+
+	@Test(priority = 2, description = "Add Invalid InLocalization")
     public void InvalidAddLocalization(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid Localization");
@@ -37,18 +52,6 @@ public class Localization extends BaseTest{
         	Thread.sleep(3000);
     }
 
-	@Test(priority = 2, description = "Add Localization")
-    public void AddLocalization(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Localization");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddLocalization();
-        	Thread.sleep(3000);
-    }
-
+	
 
 }

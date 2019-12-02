@@ -24,7 +24,24 @@ public class PackagePalletDefinition extends BaseTest {
     
 }
 	
-	@Test(priority = 1, description = "Invalid Add Package Pallet Definition")
+	@Test(priority = 1, description = "Add Package Pallet Definition")
+
+	public void AddPackagePallet(Method method) throws InterruptedException {
+    //ExtentReports Description
+    ExtentTestManager.startTest(method.getName(), "Add Package Pallet Definition");
+
+    homePage
+        .goToItelli()
+        .goToLoginPage()
+        .loginToItelli("milkrunadmin", "1234")
+        .AddPackagePalletDefiniton()
+        .LogoutPage();
+    	Thread.sleep(3000);
+    
+}
+
+	
+	@Test(priority = 2, description = "Invalid Add Package Pallet Definition")
 
 	public void InvalidAddPackagePallet(Method method) throws InterruptedException {
     //ExtentReports Description
@@ -40,20 +57,5 @@ public class PackagePalletDefinition extends BaseTest {
     
 }
 
-	@Test(priority = 2, description = "Add Package Pallet Definition")
-
-	public void AddPackagePallet(Method method) throws InterruptedException {
-    //ExtentReports Description
-    ExtentTestManager.startTest(method.getName(), "Add Package Pallet Definition");
-
-    homePage
-        .goToItelli()
-        .goToLoginPage()
-        .loginToItelli("milkrunadmin", "1234")
-        .AddPackagePalletDefiniton()
-        .LogoutPage();
-    	Thread.sleep(3000);
-    
-}
 
 }

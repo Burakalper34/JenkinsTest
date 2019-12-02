@@ -23,7 +23,21 @@ public class Roles extends BaseTest {
         
     }
 
-	@Test(priority = 1, description = "Add Invalid Role")
+	@Test(priority = 1, description = "Add Role")
+    public void AddRole(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Role");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddRoles()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
+
+	@Test(priority = 2, description = "Add Invalid Role")
     public void InvalidAddRole(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid Role");
@@ -37,17 +51,5 @@ public class Roles extends BaseTest {
         	Thread.sleep(2000);
     }
 
-	@Test(priority = 2, description = "Add Role")
-    public void AddRole(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Role");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddRoles();
-        	Thread.sleep(2000);
-    }
 
 }

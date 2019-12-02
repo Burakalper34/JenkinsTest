@@ -22,8 +22,24 @@ public class Truck extends BaseTest {
         	Thread.sleep(2000);
         
     }
+	
+	@Test(priority = 1, description = "Add Truck")
+    public void AddTruck(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Truck");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddTruck()
+            .LogoutPage();
+        	Thread.sleep(2000);
+    }
 
-	@Test(priority = 1, description = "Add Invalid Truck")
+
+
+	@Test(priority = 2, description = "Add Invalid Truck")
     public void InvalidAddTruck(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid Truck");
@@ -34,22 +50,9 @@ public class Truck extends BaseTest {
             .loginToItelli("milkrunadmin", "1234")
             .InvalidAddTruck()
             .LogoutPage();
-        	Thread.sleep(2000);
+        	Thread.sleep(3000);
         	
     }
 
-	@Test(priority = 2, description = "Add Truck")
-    public void AddTruck(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Truck");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddTruck();
-        	Thread.sleep(2000);
-    }
-
-
+	
 }

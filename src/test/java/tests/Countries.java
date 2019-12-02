@@ -23,7 +23,21 @@ public class Countries extends BaseTest{
         
     }
 
-	@Test(priority = 1, description = "Add Invalid Country")
+	@Test(priority = 1, description = "Add Country")
+    public void AddCountry(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Country");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddCountry()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
+
+	@Test(priority = 2, description = "Add Invalid Country")
     public void InvalidAddCountry(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid Country");
@@ -37,18 +51,6 @@ public class Countries extends BaseTest{
         	Thread.sleep(3000);
     }
 
-	@Test(priority = 1, description = "Add Country")
-    public void AddCountry(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Country");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddCountry();
-        	Thread.sleep(3000);
-    }
-
+	
 
 }

@@ -23,8 +23,24 @@ public class ReportDefinition extends BaseTest {
         
         	
     }
+	
+	@Test(priority = 1, description = "Add ReportDefinition")
+    public void AddReportDefinition(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Invalid Add ReportDefinition");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddReportDefinition()
+            .LogoutPage();
+        	Thread.sleep(3000);
+        
+    }
 
-	@Test(priority = 1, description = "Invalid Add ReportDefinition")
+
+	@Test(priority = 2, description = "Invalid Add ReportDefinition")
     public void InvalidAddReportDefinition(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Invalid Add ReportDefinition");
@@ -39,19 +55,5 @@ public class ReportDefinition extends BaseTest {
         
     }
 
-	@Test(priority = 2, description = "Add ReportDefinition")
-    public void AddReportDefinition(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Invalid Add ReportDefinition");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddReportDefinition();
-            
-        	Thread.sleep(2000);
-        
-    }
-
+	
 }

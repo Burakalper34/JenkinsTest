@@ -22,7 +22,22 @@ public class Permission extends BaseTest {
         	Thread.sleep(2000);
         
     }
-	@Test(priority = 1, description = "Add Invalid Permission")
+	
+	@Test(priority = 1, description = "Add Permission")
+    public void AddPermission(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Permission");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddPermission()
+            .LogoutPage();
+        	Thread.sleep(2000);
+    }
+
+	@Test(priority = 2, description = "Add Invalid Permission")
     public void InvalidAddPermission(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid Permission");
@@ -36,17 +51,5 @@ public class Permission extends BaseTest {
         	Thread.sleep(2000);
     }
 
-	@Test(priority = 2, description = "Add Permission")
-    public void AddPermission(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Permission");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddPermission();
-        	Thread.sleep(2000);
-    }
-
+	
 }

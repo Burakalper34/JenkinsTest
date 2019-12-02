@@ -22,8 +22,23 @@ public class Driver extends BaseTest {
         	Thread.sleep(3000);
         
     }
+	
+	@Test(priority = 1, description = "Add Driver")
+    public void AddDriver(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Driver");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddDrivers()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
 
-	@Test(priority = 1, description = "Add Invalid Driver")
+
+	@Test(priority = 2, description = "Add Invalid Driver")
     public void InvalidAddDriver(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid Driver");
@@ -37,19 +52,7 @@ public class Driver extends BaseTest {
         	Thread.sleep(3000);
     }
 
-	@Test(priority = 2, description = "Add Driver")
-    public void AddDriver(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Driver");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddDrivers();
-        	Thread.sleep(3000);
-    }
-
+	
 
 	
 }

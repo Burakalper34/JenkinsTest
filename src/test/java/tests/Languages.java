@@ -22,8 +22,22 @@ public class Languages extends BaseTest{
         	Thread.sleep(2000);
         
     }
+	
+	@Test(priority = 1, description = "Add Language")
+    public void AddLanguage(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Language");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddLanguage()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
 
-	@Test(priority = 1, description = "Add Invalid Language")
+	@Test(priority = 2, description = "Add Invalid Language")
     public void InvalidAddLanguage(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Language");
@@ -37,18 +51,7 @@ public class Languages extends BaseTest{
         	Thread.sleep(3000);
     }
 	
-	@Test(priority = 2, description = "Add Language")
-    public void AddLanguage(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Language");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddLanguage();
-        	Thread.sleep(3000);
-    }
+
 
 
 }

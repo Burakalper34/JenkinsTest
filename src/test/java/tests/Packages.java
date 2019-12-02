@@ -23,7 +23,22 @@ public class Packages extends BaseTest {
         	Thread.sleep(2000);
         
     }
-	@Test(priority = 1, description = "Add Invalid Package")
+	
+	@Test(priority = 1, description = "Add Package")
+    public void AddPackage(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Package");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddPackage()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
+
+	@Test(priority = 2, description = "Add Invalid Package")
     public void InvalidAddPackage(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid Package");
@@ -34,22 +49,10 @@ public class Packages extends BaseTest {
             .loginToItelli("milkrunadmin", "1234")
             .InvalidAddPackage()
             .LogoutPage();
-        	Thread.sleep(2000);
+        	Thread.sleep(3000);
     }
 
-	@Test(priority = 2, description = "Add Package")
-    public void AddPackage(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Package");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddPackage();
-        	Thread.sleep(2000);
-    }
-
+	
 
 
 }

@@ -22,7 +22,22 @@ public class Company  extends BaseTest {
         
     }
 
-	@Test(priority = 1, description = "Invalid Add Companies")
+@Test(priority = 1, description = "Add Companies")
+	
+	public void AddCompany(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Companies");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddCompany()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
+
+	@Test(priority = 2, description = "Invalid Add Companies")
 	
 	public void InvalidAddCompany(Method method) throws InterruptedException {
         //ExtentReports Description
@@ -38,18 +53,5 @@ public class Company  extends BaseTest {
         
     }
 	
-	@Test(priority = 2, description = "Add Companies")
 	
-	public void AddCompany(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Companies");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddCompany();
-        	Thread.sleep(2000);
-    }
-
 }

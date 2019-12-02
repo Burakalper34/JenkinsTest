@@ -22,7 +22,21 @@ public class Message_Template extends BaseTest{
         	Thread.sleep(3000);
         
     }
-	@Test(priority = 1, description = "Add Invalid Message Template")
+	@Test(priority = 1, description = "Add Message Template")
+    public void AddMessageTemplate(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Message Template");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddMessageTemplate()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
+
+	@Test(priority = 2, description = "Add Invalid Message Template")
     public void InvalidAddMessageTemplate(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Message Template");
@@ -36,18 +50,6 @@ public class Message_Template extends BaseTest{
         Thread.sleep(2000);
     }
 
-	@Test(priority = 1, description = "Add Message Template")
-    public void AddMessageTemplate(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Message Template");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddMessageTemplate();
-        	Thread.sleep(2000);
-    }
-
+	
 
 }

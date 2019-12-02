@@ -23,7 +23,21 @@ public class Lookups extends BaseTest {
         
     }
 
-	@Test(priority = 1, description = "Add invalid Lookup")
+	@Test(priority = 1, description = "Add Lookup")
+    public void AddLookup(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Lookup");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddLookup()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
+
+	@Test(priority = 2, description = "Add invalid Lookup")
     public void InvalidAddLookup(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add invalid Lookup");
@@ -37,17 +51,5 @@ public class Lookups extends BaseTest {
         	Thread.sleep(3000);
     }
 
-	@Test(priority = 2, description = "Add Lookup")
-    public void AddLookup(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Lookup");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddLookup();
-        	Thread.sleep(3000);
-    }
-
+	
 }
