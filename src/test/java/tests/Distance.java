@@ -23,10 +23,24 @@ public class Distance extends BaseTest{
         
     }
 
-	@Test(priority = 1, description = "Add Invalid Distance")
-    public void InvalidAddDistance(Method method) throws InterruptedException {
+	@Test(priority = 1, description = "Add Distance")
+    public void AddDistance(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Distance");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddDistance()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
+
+	@Test(priority = 2, description = "Add Invalid Distance")
+    public void InvalidAddDistance(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Invalid Distance");
  
         homePage
             .goToItelli()
@@ -37,18 +51,6 @@ public class Distance extends BaseTest{
         	Thread.sleep(3000);
     }
 
-	@Test(priority = 2, description = "Add Distance")
-    public void AddDistance(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Distance");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddDistance();
-        	Thread.sleep(3000);
-    }
-
+	
 
 }

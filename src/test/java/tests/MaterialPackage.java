@@ -24,7 +24,23 @@ public class MaterialPackage extends BaseTest {
         	
     }
 
-	@Test(priority = 1, description = "Invalid Add MaterialPackage")
+	@Test(priority = 1, description = "Add MaterialPackage")
+    public void AddMaterialPackage(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add MaterialPackage");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddMaterial_Package()
+            .LogoutPage();
+           
+        	Thread.sleep(3000);
+        
+    }
+
+	@Test(priority = 2, description = "Invalid Add MaterialPackage")
     public void InvalidAddMaterialPackage(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Invalid Add MaterialPackage");
@@ -39,19 +55,5 @@ public class MaterialPackage extends BaseTest {
         
     }
 
-	@Test(priority = 2, description = "Add MaterialPackage")
-    public void AddMaterialPackage(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add MaterialPackage");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddMaterial_Package();
-           
-        	Thread.sleep(3000);
-        
-    }
-
+	
 }

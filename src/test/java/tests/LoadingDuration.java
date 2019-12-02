@@ -22,7 +22,22 @@ public class LoadingDuration extends BaseTest {
         	Thread.sleep(3000);
         
     }
-	@Test(priority = 1, description = "Add Invalid Loading Duration")
+	
+	@Test(priority = 1, description = "Add Loading Duration")
+    public void AddLoadingDuration(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Loading Duration");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddLoadingDuration()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
+
+	@Test(priority = 2, description = "Add Invalid Loading Duration")
     public void InvalidAddLoadingDuration(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid Loading Duration");
@@ -36,18 +51,6 @@ public class LoadingDuration extends BaseTest {
         	Thread.sleep(3000);
     }
 
-	@Test(priority = 2, description = "Add Loading Duration")
-    public void AddLoadingDuration(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Loading Duration");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddLoadingDuration();
-        	Thread.sleep(3000);
-    }
-
+	
 
 }

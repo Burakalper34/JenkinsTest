@@ -22,19 +22,7 @@ public class Login extends BaseTest {
     Thread.sleep(3000);
     
 }
-
-	@Test(priority = 1, description = "Invalid Login")
-	public void InvalidLogin(Method method) throws InterruptedException {
-	      
-	   homePage
-	   .goToItelli()
-	   .goToLoginPage()
-	   .loginToItelli("test", "123456")
-	   .LogoutPage();
-	   Thread.sleep(2000);
-	}
-	
-	@Test(priority = 2, description = "Login")
+	@Test(priority = 1, description = "Login")
 	public void Login(Method method) throws InterruptedException {
 	      
 	   homePage
@@ -42,8 +30,21 @@ public class Login extends BaseTest {
 	   .goToLoginPage()
 	   .loginToItelli("milkrunadmin", "1234")
 	   .LogoutPage();
-	   Thread.sleep(2000);
+	   Thread.sleep(3000);
+	}
+
+
+	@Test(priority = 2, description = "Invalid Login")
+	public void InvalidLogin(Method method) throws InterruptedException {
+	      
+	   homePage
+	   .goToItelli()
+	   .goToLoginPage()
+	   .loginToItelli("test", "123456")
+	   .LogoutPage();
+	   Thread.sleep(3000);
 	}
 	
+		
 
 }

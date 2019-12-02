@@ -23,10 +23,24 @@ public class Dimension extends BaseTest {
         
     }
 
-	@Test(priority = 1, description = "Add Invalid Dimension")
-    public void InvalidAddDimension(Method method) throws InterruptedException {
+	@Test(priority = 1, description = "Add Dimension")
+    public void AddDimension(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Dimension");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddDimension()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
+
+	@Test(priority = 2, description = "Add Invalid Dimension")
+    public void InvalidAddDimension(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Invalid Dimension");
  
         homePage
             .goToItelli()
@@ -37,17 +51,5 @@ public class Dimension extends BaseTest {
         	Thread.sleep(3000);
     }
 
-	@Test(priority = 2, description = "Add Dimension")
-    public void AddDimension(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Dimension");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddDimension();
-        	Thread.sleep(3000);
-    }
-
+	
 }

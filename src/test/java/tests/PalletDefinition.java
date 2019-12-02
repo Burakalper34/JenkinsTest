@@ -23,24 +23,7 @@ public class PalletDefinition extends BaseTest {
     	Thread.sleep(3000);
     
 }
-
-	@Test(priority = 1, description = "Invalid Add Pallet Definition")
-
-	public void InvalidAddPallet(Method method) throws InterruptedException {
-    //ExtentReports Description
-    ExtentTestManager.startTest(method.getName(), "Invalid Add Pallet Definition");
-
-    homePage
-        .goToItelli()
-        .goToLoginPage()
-        .loginToItelli("milkrunadmin", "1234")
-        .InvalidAddPalletDefiniton()
-        .LogoutPage();
-    	Thread.sleep(2000);
-    
-}
-
-	@Test(priority = 2, description = "Add Pallet Definition")
+	@Test(priority = 1, description = "Add Pallet Definition")
 
 	public void AddPallet(Method method) throws InterruptedException {
     //ExtentReports Description
@@ -52,8 +35,26 @@ public class PalletDefinition extends BaseTest {
         .loginToItelli("milkrunadmin", "1234")
         .AddPalletDefiniton()
         .LogoutPage();
-    	Thread.sleep(2000);
+    	Thread.sleep(3000);
     
 }
 
+
+	@Test(priority = 2, description = "Invalid Add Pallet Definition")
+
+	public void InvalidAddPallet(Method method) throws InterruptedException {
+    //ExtentReports Description
+    ExtentTestManager.startTest(method.getName(), "Invalid Add Pallet Definition");
+
+    homePage
+        .goToItelli()
+        .goToLoginPage()
+        .loginToItelli("milkrunadmin", "1234")
+        .InvalidAddPalletDefiniton()
+        .LogoutPage();
+    	Thread.sleep(3000);
+    
+}
+
+	
 }

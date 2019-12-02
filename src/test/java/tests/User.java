@@ -22,8 +22,22 @@ public class User extends BaseTest{
         	Thread.sleep(3000); 
         	
     }
+	
+	@Test(priority = 1, description = "Successful Add User")
+    public void AddUser(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Successful Add User");
+        homePage
+            .goToItelli()
+            .goToLoginPage()         
+            .loginToItelli("milkrunadmin", "1234")
+            .CreateUser()
+            .LogoutPage();
+        	Thread.sleep(3000);
+        	
+    }
 
-	@Test(priority = 1, description = "Invalid Add User")
+	@Test(priority = 2, description = "Invalid Add User")
     public void InvalidAddUser(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Invalid Add User");
@@ -36,18 +50,5 @@ public class User extends BaseTest{
             .LogoutPage();
         	Thread.sleep(3000);
         	
-    }
-
-	@Test(priority = 2, description = "Successful Add User")
-    public void AddUser(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Successful Add User");
-        homePage
-            .goToItelli()
-            .goToLoginPage()         
-            .loginToItelli("milkrunadmin", "1234")
-            .CreateUser();
-        	Thread.sleep(3000);
-        	
-    }
+    }	
 }

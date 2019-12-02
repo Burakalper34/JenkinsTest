@@ -19,10 +19,25 @@ public class Modules extends BaseTest{
             .loginToItelli("milkrunadmin", "1234")
             .EmptyAddModule()
             .LogoutPage();
-        	Thread.sleep(2000);
+        	Thread.sleep(3000);
         
     }
-	@Test(priority = 1, description = "Add Invalid Module")
+	
+	@Test(priority = 1, description = "Add Module")
+    public void AddModules(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Module");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddModule()
+            .LogoutPage();
+        	Thread.sleep(2000);
+    }
+
+	@Test(priority = 2, description = "Add Invalid Module")
     public void InvalidAddModules(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid Module");
@@ -36,18 +51,6 @@ public class Modules extends BaseTest{
         	Thread.sleep(2000);
     }
 
-	@Test(priority = 2, description = "Add Module")
-    public void AddModules(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Module");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddModule();
-        	Thread.sleep(2000);
-    }
 
 
 }

@@ -22,7 +22,22 @@ public class Themes extends BaseTest{
         	Thread.sleep(2000);
         
     }
-	@Test(priority = 1, description = "Add Invalid Theme")
+	
+	@Test(priority = 1, description = "Add Theme")
+    public void AddTheme(Method method) throws InterruptedException {
+        //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(), "Add Theme");
+ 
+        homePage
+            .goToItelli()
+            .goToLoginPage()
+            .loginToItelli("milkrunadmin", "1234")
+            .AddTheme()
+            .LogoutPage();
+        	Thread.sleep(3000);
+    }
+
+	@Test(priority = 2, description = "Add Invalid Theme")
     public void InvalidAddTheme(Method method) throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.startTest(method.getName(), "Add Invalid Theme");
@@ -37,18 +52,6 @@ public class Themes extends BaseTest{
         	Thread.sleep(2000);
     }
 
-	@Test(priority = 2, description = "Add Theme")
-    public void AddTheme(Method method) throws InterruptedException {
-        //ExtentReports Description
-        ExtentTestManager.startTest(method.getName(), "Add Theme");
- 
-        homePage
-            .goToItelli()
-            .goToLoginPage()
-            .loginToItelli("milkrunadmin", "1234")
-            .AddTheme();
-        	Thread.sleep(2000);
-    }
-
+	
 
 }
